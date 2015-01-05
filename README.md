@@ -1,0 +1,4 @@
+libirc
+======
+
+Rust IRC Library
