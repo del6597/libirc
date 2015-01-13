@@ -18,6 +18,8 @@ impl Server {
     }
 }
 
+impl Copy for Server { }
+
 pub struct User {
     nick: &'static str,
     ident: &'static str,
@@ -48,6 +50,8 @@ impl User {
     }    
 }
 
+impl Copy for User { }
+
 pub struct Channel {
     name: &'static str,
     usercount: u16
@@ -66,3 +70,5 @@ impl Channel {
         self.name
     }
 }
+
+impl Copy for Channel { }
